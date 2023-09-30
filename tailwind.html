@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+
+    tailwind.config = {
+      theme: {
+        screens: {
+          'sm': '300px',
+          // => @media (min-width: 640px) { ... }
+
+          'md': '400px',
+          // => @media (min-width: 768px) { ... }
+
+          'lg': '800px',
+          // => @media (min-width: 1024px) { ... }
+
+          'xl': '1280px',
+          // => @media (min-width: 1280px) { ... }
+
+          '2xl': '1536px',
+          // => @media (min-width: 1536px) { ... }
+        }
+      }
+    }
+  </script>
+</head>
+
+<!-- 
+    box-border box sizing 
+    border-radius:: rounded-sd/md lg/xl/2xl
+    text-xs   font-size
+    line height::  leading
+ -->
+
+<body>
+
+
+
+  <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  max-w-[800px]  mx-auto gap-[20px] my-[150px]   ">
+    <div
+      class=" bg-top hover:bg-bottom duration-[2s] bg-cover object-cover bg-no-repeat sm:h-[150px] md:h-[200px]  brightness-50 hover:filter-none  bg-[url('https://images.unsplash.com/photo-1627135345338-a2024b1aea9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Ym95c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60')] overflow-hidden">
+    </div>
+    <div
+      class=" bg-top hover:bg-bottom duration-[2s] bg-cover object-cover bg-no-repeat sm:h-[150px] md:h-[200px]  brightness-50 hover:brightness-150  bg-[url('https://images.unsplash.com/photo-1492950103599-127d2be251b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80')] overflow-hidden">
+    </div>
+    <div
+      class=" bg-top hover:bg-bottom duration-[2s] bg-cover object-cover bg-no-repeat sm:h-[150px] md:h-[400px] brightness-50 hover:brightness-150  md:row-span-2 bg-[url('https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60')] overflow-hidden">
+    </div>
+    <div
+      class=" bg-top hover:bg-bottom duration-[2s] bg-cover object-cover bg-no-repeat sm:h-[150px] md:h-[200px] brightness-50 hover:brightness-150  bg-[url('https://images.unsplash.com/photo-1682685796852-aa311b46f50d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxzZWFyY2h8MzZ8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60')] overflow-hidden">
+    </div>
+    <div
+      class=" bg-top hover:bg-bottom duration-[2s] bg-cover object-cover bg-no-repeat sm:h-[150px] md:h-[200px]  brightness-50 hover:brightness-150 bg-[url('https://images.unsplash.com/photo-1573352763925-82bd5dfc31d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRlbXBsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60')] overflow-hidden">
+    </div>
+    <div
+      class=" bg-top hover:bg-bottom duration-[2s] bg-cover bg-top hover:bg-bottom    sm:h-[150px] md:h-[200px] brightness-50 hover:brightness-150  duration-[2s] bg-blend-hard-light object-cover bg-no-repeat bg-[url('https://images.unsplash.com/photo-1591824438708-ce405f36ba3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YW5pbWFsc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60')] overflow-hidden">
+    </div>
+    <div
+      class=" overflow-hidden bg-top hover:bg-bottom duration-[2s] bg-cover object-cover bg-no-repeat sm:h-[150px] brightness-50 hover:brightness-150  md:h-[200px] bg-[url('https://media.istockphoto.com/id/949472768/photo/tiger-portrait.webp?b=1&s=170667a&w=0&k=20&c=XWHJg8dB5Av4TqDlk2d9BQyDA1xONefHx9VBAvhHoO4=')] overflow-hidden">
+    </div>
+    <div
+      class="  bg-top hover:bg-bottom duration-[2s] sm:h-[150px] md:h-[200px]  bg-cover object-cover bg-no-repeat brightness-50 hover:brightness-150  bg-[url('https://images.unsplash.com/photo-1647891938250-954addeb9c51?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80')] overflow-hidden">
+    </div>
+  </div>
+</body>
+
+</html>
